@@ -1,0 +1,24 @@
+az vmss create \
+--name vmss-rocketlab-buildset \
+--resource-group rg-rocketlab-mgmt \
+--image UbuntuLTS \
+--vm-sku Standard_DS2_v3 \
+--storage-sku Standard_LRS \ 
+--authentication-type SSH \
+--instance-count 2 \
+--disable-overprovision \
+--upgrade-policy-mode manual \
+--single-placement-group false \
+--platform-fault-domain-count 1 \
+--load-balancer "" \
+--ephemeral-os-disk true \
+--os-disk-caching readonly 
+
+\\Execute this from azure cloudshell under bash prompt or under WSL2
+\\Storage SKU with ephemeral disks flag set for true must be Standard_LRS vs StandardSSD_LRS or PremiumSSD_LRS
+\\Using ephemeral disks with self-hosted build agents reduces spin up time and the storage cost is free. 
+
+\\Ideal for stateless applications with ability to fast reset or reimage VMs and scale set instances to the original boot state.
+\\Lower latency, similar to a temporary disk.
+\\Ephemeral OS disks are free, you incur no storage cost for OS disk.
+
