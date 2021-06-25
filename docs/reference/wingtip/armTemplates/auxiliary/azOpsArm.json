@@ -41,11 +41,11 @@
     },
     "variables": {
         "formattingPrincipalIdToString": "[replace(replace(replace(string(parameters('principalId')), '\"', ''), '[', ''), ']', '')]",
-        "keyVaultName": "[take(concat(resourceGroup().name, uniqueString(subscription().subscriptionId)), 24)]",
+        "keyVaultName": "[take(concat('kv-',resourceGroup().name, uniqueString(subscription().subscriptionId)), 24)]",
         "keyVaultRbacName": "[concat(variables('keyVaultName'), '/Microsoft.Authorization/', guid(variables('keyVaultName')))]",
         "patSecretName": "PATSecret",
         "spnSecretName": "SPNSecret",
-        "userManagedIdentityName": "[concat(resourceGroup().name, '-umi')]",
+        "userManagedIdentityName": "[concat('umi-',resourceGroup().name)]",
         "keyVaultAdminRbac": "/providers/Microsoft.Authorization/roleDefinitions/00482a5a-887f-4fb3-b363-3b7fe8e74483"
     },
     "resources": [
@@ -116,7 +116,7 @@
         {
             "type": "Microsoft.Resources/deploymentScripts",
             "apiVersion": "2020-10-01",
-            "name": "[concat(resourceGroup().name, '-GitHub')]",
+            "name": "[concat('dscript-',resourceGroup().name, '-github')]",
             "location": "[resourceGroup().location]",
             "kind": "AzurePowerShell",
             "identity": {
