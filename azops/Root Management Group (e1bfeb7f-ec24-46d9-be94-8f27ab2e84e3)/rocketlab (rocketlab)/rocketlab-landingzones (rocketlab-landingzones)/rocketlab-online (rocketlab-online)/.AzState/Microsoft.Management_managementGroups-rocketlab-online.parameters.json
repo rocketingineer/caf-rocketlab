@@ -1,0 +1,36 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/rocketlab-online",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "rocketlab-online",
+        "TenantId": "e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+        "DisplayName": "rocketlab-online",
+        "UpdatedTime": "2021-06-23T05:36:13.7216301Z",
+        "UpdatedBy": "de0b1f5b-b7c9-44cb-a1bd-ef559f4bc03e",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/rocketlab-landingzones",
+        "ParentName": "rocketlab-landingzones",
+        "ParentDisplayName": "rocketlab-landingzones",
+        "Children": [
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/6c6ca072-a26c-4c68-b9f7-ba1526800356",
+            "Name": "6c6ca072-a26c-4c68-b9f7-ba1526800356",
+            "DisplayName": "RocketLab-Dev",
+            "Children": null
+          },
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/fbb19242-d61f-46b3-a832-25519409a4c6",
+            "Name": "fbb19242-d61f-46b3-a832-25519409a4c6",
+            "DisplayName": "RocketLab-Prod",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}

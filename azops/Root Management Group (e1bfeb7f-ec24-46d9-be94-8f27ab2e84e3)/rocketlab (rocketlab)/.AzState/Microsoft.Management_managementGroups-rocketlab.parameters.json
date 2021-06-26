@@ -1,0 +1,50 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/rocketlab",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "rocketlab",
+        "TenantId": "e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+        "DisplayName": "rocketlab",
+        "UpdatedTime": "2021-06-23T05:34:55.869966Z",
+        "UpdatedBy": "de0b1f5b-b7c9-44cb-a1bd-ef559f4bc03e",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+        "ParentName": "e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+        "ParentDisplayName": "Root Management Group",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/rocketlab-landingzones",
+            "Name": "rocketlab-landingzones",
+            "DisplayName": "rocketlab-landingzones",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/rocketlab-sandboxes",
+            "Name": "rocketlab-sandboxes",
+            "DisplayName": "rocketlab-sandboxes",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/rocketlab-decommissioned",
+            "Name": "rocketlab-decommissioned",
+            "DisplayName": "rocketlab-decommissioned",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/rocketlab-platform",
+            "Name": "rocketlab-platform",
+            "DisplayName": "rocketlab-platform",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}
