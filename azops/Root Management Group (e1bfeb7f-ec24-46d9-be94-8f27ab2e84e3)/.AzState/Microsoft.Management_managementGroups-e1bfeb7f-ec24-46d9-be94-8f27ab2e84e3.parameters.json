@@ -1,0 +1,29 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+        "TenantId": "e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+        "DisplayName": "Root Management Group",
+        "UpdatedTime": "2021-06-22T21:10:01.5023877Z",
+        "UpdatedBy": "de0b1f5b-b7c9-44cb-a1bd-ef559f4bc03e",
+        "ParentId": null,
+        "ParentName": null,
+        "ParentDisplayName": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/rocketlab",
+            "Name": "rocketlab",
+            "DisplayName": "rocketlab",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}

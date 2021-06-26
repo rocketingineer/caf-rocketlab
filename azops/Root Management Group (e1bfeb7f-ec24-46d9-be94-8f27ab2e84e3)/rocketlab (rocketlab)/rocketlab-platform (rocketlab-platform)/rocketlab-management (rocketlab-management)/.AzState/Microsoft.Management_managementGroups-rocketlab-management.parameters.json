@@ -1,0 +1,29 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/rocketlab-management",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "rocketlab-management",
+        "TenantId": "e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+        "DisplayName": "rocketlab-management",
+        "UpdatedTime": "2021-06-23T05:36:11.9991579Z",
+        "UpdatedBy": "de0b1f5b-b7c9-44cb-a1bd-ef559f4bc03e",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/rocketlab-platform",
+        "ParentName": "rocketlab-platform",
+        "ParentDisplayName": "rocketlab-platform",
+        "Children": [
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/f3a94206-4728-474f-a6a9-71593943aa1e",
+            "Name": "f3a94206-4728-474f-a6a9-71593943aa1e",
+            "DisplayName": "RocketLab-SharedSvcs",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}

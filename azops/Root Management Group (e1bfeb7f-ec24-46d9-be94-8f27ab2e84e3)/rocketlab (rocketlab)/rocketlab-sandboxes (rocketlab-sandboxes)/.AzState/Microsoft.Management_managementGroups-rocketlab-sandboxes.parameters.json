@@ -1,0 +1,21 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/rocketlab-sandboxes",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "rocketlab-sandboxes",
+        "TenantId": "e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+        "DisplayName": "rocketlab-sandboxes",
+        "UpdatedTime": "2021-06-23T05:35:42.8029659Z",
+        "UpdatedBy": "de0b1f5b-b7c9-44cb-a1bd-ef559f4bc03e",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/rocketlab",
+        "ParentName": "rocketlab",
+        "ParentDisplayName": "rocketlab",
+        "Children": null
+      }
+    }
+  }
+}

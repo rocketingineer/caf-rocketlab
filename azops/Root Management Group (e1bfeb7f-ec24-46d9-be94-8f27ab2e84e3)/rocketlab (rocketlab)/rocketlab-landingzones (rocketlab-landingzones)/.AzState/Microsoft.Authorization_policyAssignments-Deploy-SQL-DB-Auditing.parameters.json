@@ -1,0 +1,33 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "4c477265-bfbd-4b89-b162-4c8b05dd41b7",
+          "tenantId": "e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+          "type": "SystemAssigned"
+        },
+        "Location": "centralus",
+        "Name": "Deploy-SQL-DB-Auditing",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/rocketlab-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
+        "Properties": {
+          "Description": "Deploy-SQL-Audit",
+          "DisplayName": "Deploy-SQL-Audit",
+          "NotScopes": null,
+          "Parameters": null,
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a6fb4358-5bf4-4ad7-ba82-2cd2f41ce5e9",
+          "Scope": "/providers/Microsoft.Management/managementGroups/rocketlab-landingzones"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/rocketlab-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
+        "ResourceName": "Deploy-SQL-DB-Auditing",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

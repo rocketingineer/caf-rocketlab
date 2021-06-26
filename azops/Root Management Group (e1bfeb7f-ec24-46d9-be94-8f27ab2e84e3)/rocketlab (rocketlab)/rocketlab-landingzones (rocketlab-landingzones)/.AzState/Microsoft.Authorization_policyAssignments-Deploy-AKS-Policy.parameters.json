@@ -1,0 +1,33 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "4d3667f4-0138-4f17-866e-f89e8899caf9",
+          "tenantId": "e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+          "type": "SystemAssigned"
+        },
+        "Location": "centralus",
+        "Name": "Deploy-AKS-Policy",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/rocketlab-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-AKS-Policy",
+        "Properties": {
+          "Description": "Deploy-AKS-Policy",
+          "DisplayName": "Deploy-AKS-Policy",
+          "NotScopes": null,
+          "Parameters": null,
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a8eff44f-8c92-45c3-a3fb-9880802d67a7",
+          "Scope": "/providers/Microsoft.Management/managementGroups/rocketlab-landingzones"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/rocketlab-landingzones/providers/Microsoft.Authorization/policyAssignments/Deploy-AKS-Policy",
+        "ResourceName": "Deploy-AKS-Policy",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

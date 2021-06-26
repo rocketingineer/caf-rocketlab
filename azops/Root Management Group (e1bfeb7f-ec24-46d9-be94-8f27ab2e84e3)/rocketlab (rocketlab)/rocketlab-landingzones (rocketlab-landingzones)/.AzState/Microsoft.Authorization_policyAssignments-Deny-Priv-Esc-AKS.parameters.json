@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "b8ee9de1-9078-4ed9-a14c-ea87c80ae614",
+          "tenantId": "e1bfeb7f-ec24-46d9-be94-8f27ab2e84e3",
+          "type": "SystemAssigned"
+        },
+        "Location": "centralus",
+        "Name": "Deny-Priv-Esc-AKS",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/rocketlab-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Esc-AKS",
+        "Properties": {
+          "Description": "Deny-Privileged-Escalations-AKS",
+          "DisplayName": "Deny-Privileged-Escalations-AKS",
+          "NotScopes": null,
+          "Parameters": {
+            "effect": {
+              "value": "deny"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1c6e92c9-99f0-4e55-9cf2-0c234dc48f99",
+          "Scope": "/providers/Microsoft.Management/managementGroups/rocketlab-landingzones"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/rocketlab-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Esc-AKS",
+        "ResourceName": "Deny-Priv-Esc-AKS",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

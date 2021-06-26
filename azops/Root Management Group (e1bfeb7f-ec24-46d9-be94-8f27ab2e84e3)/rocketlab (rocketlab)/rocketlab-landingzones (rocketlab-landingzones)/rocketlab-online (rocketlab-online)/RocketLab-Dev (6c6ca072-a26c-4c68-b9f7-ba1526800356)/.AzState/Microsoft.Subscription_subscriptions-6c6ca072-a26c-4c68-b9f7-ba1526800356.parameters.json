@@ -1,0 +1,15 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/6c6ca072-a26c-4c68-b9f7-ba1526800356",
+        "Name": "6c6ca072-a26c-4c68-b9f7-ba1526800356",
+        "DisplayName": "RocketLab-Dev",
+        "Children": null
+      }
+    }
+  }
+}
